@@ -67,21 +67,26 @@ nav ul {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    width: 50%;
 }
 
 .container {
     padding: 5px;
+    display: flex;
 }
 
 .container img:hover,
 .container img:active {
     transition: 0.2s;
-    width: 30%;
+    height: 20vw;
 }
 
 .container img {
     transition: 0.2s;
-    width: 15%;
+    height: 10vw;
+}
+.container div{
+    height:20vw;
 }
 
 .section {
