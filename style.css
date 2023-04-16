@@ -68,6 +68,7 @@ nav ul {
     flex-direction: column;
     flex-wrap: wrap;
     width: 50%;
+    margin: 0px;
 }
 
 .container {
@@ -102,7 +103,7 @@ nav ul {
 .little_Divider {
     width: 150px;
     background-color: black;
-    height: 2px;
+    max-height: 2px;
     margin: 10px;
 }
 
@@ -118,7 +119,42 @@ nav ul {
 
 .thin_Content {
     font-size: 1.5em;
-    font-weight: thin;
+    font-weight: bold;
+}
+
+#projects{
+    display: flex;
+    flex: column;
+    width: 50vw;
+}
+#projects .container{
+    display: flex;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 25%;
+    border-radius: 20px;
+    margin: 5px;
+    border: 2px black solid;
+}
+
+.button{
+    margin: 10px;
+    font-weight: bold;
+    padding: 8px;
+    background-color: brown;
+    color: white;
+    border:3px black dashed;
+    display: inline-block;
+    cursor: pointer;
+    max-height: 20px;
+}
+.button:hover{
+    border: 3px black solid;
+    transition: 0.2s;
 }
 
 .heading {
@@ -126,7 +162,19 @@ nav ul {
     font-weight: bolder;
     font-size: 3em;
 }
-
+#second_Half{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+}
+#projects{
+    background: rgb(214, 75, 98);
+    color: white;
+    border-left: 0px;
+}
 .side_Image {
     padding: 0px;
 }

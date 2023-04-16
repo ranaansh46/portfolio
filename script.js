@@ -15,3 +15,8 @@ navb2.addEventListener('click', () => {
 navb3.addEventListener('click', () => {
     window.open('https://www.youtube.com/@moon.ranaansh46/featured', '_blank');
 })
+
+let back_to_Top = document.getElementById('back_to_Top');
+back_to_Top.addEventListener('click',()=>{
+    scrollTo(0,0)
+})
