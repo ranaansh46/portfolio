@@ -32,3 +32,13 @@ thunder_bat.addEventListener('click',()=>{
 portfolio.addEventListener('click',()=>{
     window.open('https://github.com/ranaansh46/portfolio','_blank');
 })
+
+
+var mySwiper = new Swiper('.swiper-container', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    }
+  });
+  

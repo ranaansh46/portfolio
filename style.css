@@ -16,6 +16,7 @@
 header {
     top: 0px;
     position: sticky;
+    z-index: 2500;
 }
 
 nav {
@@ -98,6 +99,7 @@ nav ul {
     flex-wrap: wrap;
     align-items: start;
     border: 3px black solid;
+    background-color: #F0F0F0;
     border-top: 0px;
 }
 
@@ -120,7 +122,7 @@ nav ul {
 /* this is the design/ second section */
 
 #designs {
-    background-color: rgb(255, 217, 0);
+    background-color: #f9D949;
     display: flex;
     margin: 0px;
     flex-direction: column;
@@ -128,6 +130,7 @@ nav ul {
     align-content: flex-end;
     justify-content: flex-start;
     align-items: flex-end;
+    width: 50%;
 }
 
 #designs h1 {
@@ -153,7 +156,7 @@ nav ul {
 
 .container img {
     transition: 0.2s;
-    height: 35vw;
+    height: 15vw;
     box-shadow: 8px 8px rgb(0, 0, 0);
 }
 
@@ -169,6 +172,7 @@ nav ul {
     max-height: max-content;
     gap: 15px;
     background: rgb(255, 150, 168);
+    width: 50%;
 }
 #projects .card_Container{
     display: flex;
@@ -190,7 +194,7 @@ nav ul {
     padding: 15px;
     border-radius: 20px;
     border: 2px rgb(0, 0, 0) solid;
-    background-color: white;
+    background-color: #F0F0F0;
     color: black;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -229,7 +233,7 @@ nav ul {
 
 .button:hover {
     border: 2px black solid;
-    background-color: rgb(255, 150, 168);
+    background-color: #F45050;
     font-weight: bold;
     transition: 0.2s;
 }
@@ -237,14 +241,29 @@ nav ul {
 h1 {
     font-family: 'Open Sans';
 }
+.flex-wrapper{
+    display: flex;
+}
 
 @media only screen and (max-width: 600px) {
     .content {
         width: 100vw;
     }
-
+    #designs{
+        width: 100%;
+    }
+    #projects{
+        width: 100%;
+    }
+    .container img{
+        height: 30vw;
+    }
+    .flex-wrapper{
+        flex-wrap: wrap;
+    }
     .side_Image img {
         padding: 0px;
         height: 75vw;
     }
 }
+
