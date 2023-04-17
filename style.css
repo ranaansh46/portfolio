@@ -4,11 +4,11 @@
     font-family: 'Montserrat', 'Open Sans', 'Ubuntu';
 }
 
-.divider{
+.divider {
     min-height: 2px;
     max-width: 75px;
     display: block;
-    background-color: black ;
+    background-color: black;
     margin: 5px 0px 5px 0px;
 }
 
@@ -17,21 +17,24 @@ header {
     top: 0px;
     position: sticky;
 }
-nav {
-    backdrop-filter: blur(25px);
-    box-shadow: 0px 0px 10px black;
-    display: flex;
 
+nav {
+    display: flex;
+    background-color: white;
+    border: 3px black solid;
 }
+
 nav ul {
     list-style: none;
     display: flex;
     flex-direction: row;
 }
+
 #navbutton0 img {
     max-height: 50px;
     cursor: pointer;
 }
+
 #navbutton0 {
     padding-left: 10px;
     display: flex;
@@ -41,38 +44,44 @@ nav ul {
     width: 50vw;
     gap: 10px;
 }
+
 .icons_Group {
     display: flex;
     justify-content: flex-end;
     width: 50vw;
 }
+
 #navbutton1,
 #navbutton2,
 #navbutton3 {
     padding: 10px;
 }
+
 #navbutton1:hover {
-    background-color: rgb(206, 206, 255);
+    background-color: rgb(133, 133, 255);
     cursor: pointer;
     color: white;
 }
+
 #navbutton2:hover {
-    background-color: rgb(68, 68, 68);
+    background-color: rgb(63, 63, 63);
     cursor: pointer;
     color: white;
 }
+
 #navbutton3:hover {
-    background-color: rgb(255, 134, 134);
+    background-color: rgb(255, 106, 106);
     cursor: pointer;
     color: white;
 }
 
 /* this is top section */
 .heading {
-    color: blue;
+    color: rgb(0, 0, 0);
     font-weight: bolder;
-    font-size: 3em;
+    font-size: 3.5em;
 }
+
 .side_Image {
     padding: 0px;
 }
@@ -81,6 +90,7 @@ nav ul {
     padding-left: 50px;
     height: 35vw;
 }
+
 .section {
     padding: 10px;
     display: flex;
@@ -95,11 +105,13 @@ nav ul {
     padding: 5px;
     width: 50vw;
 }
+
 .subcontent {
     font-size: 1.75em;
     font-weight: bold;
     font-family: 'Open Sans';
 }
+
 .thin_Content {
     font-size: 1.5em;
     font-family: 'Open Sans';
@@ -117,29 +129,34 @@ nav ul {
     justify-content: flex-start;
     align-items: flex-end;
 }
-#designs h1{
-    margin:10px;
+
+#designs h1 {
+    margin: 10px;
 }
+
 .container {
     padding: 5px;
     display: flex;
-    gap: 10px;
+    gap: 20px;
     justify-content: flex-start;
 }
+
 .container img:hover,
 .container img:active {
     transition: 0.2s;
-    height: 35vw;
+    transform: translate(8px, 8px);
+    box-shadow: 0px 0px rgb(0, 0, 0);
 }
 
 .container img {
     transition: 0.2s;
-    height: 25vw;
+    height: 20vw;
+    box-shadow: 8px 8px rgb(0, 0, 0);
 }
 
 /*this is the project section */
 
-#projects{
+#projects {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -148,58 +165,59 @@ nav ul {
     align-items: flex-start;
     max-height: max-content;
     gap: 15px;
+    background: rgb(255, 150, 168);
 }
-.card{
+
+.card {
     display: flex;
     padding: 15px;
     border-radius: 20px;
     border: 2px rgb(0, 0, 0) solid;
-    background-color:white;
+    background-color: white;
     color: black;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: flex-start;
     max-width: fit-content;
-}
-.card:hover,.card:active{
-    transform: translate(-5px,-5px);
     box-shadow: 5px 5px rgb(0, 0, 0);
+}
+
+.card:hover,
+.card:active {
+    transform: translate(5px, 5px);
+    box-shadow: 0px 0px rgb(0, 0, 0);
     transition: 0.2s;
 }
 
-.card h4{
-    font-family:'Open Sans';
+.card h4 {
+    font-family: 'Open Sans';
 }
-.card p{
+
+.card p {
     font-family: 'ubuntu';
 }
 
-.button{
+.button {
     margin: 10px;
     font-family: 'Open Sans';
     padding: 8px;
-    background-color: brown;
-    color: white;
-    border:3px black dashed;
+    background-color: white;
+    border: 2px black solid;
     display: inline-block;
     cursor: pointer;
     max-height: 20px;
+    border-radius: 25px;
 }
-.button:hover{
-    border: 3px black solid;
-    background-color: rgb(224, 74, 74);
+
+.button:hover {
+    border: 2px black solid;
+    background-color: rgb(255, 150, 168);
     font-weight: bold;
     transition: 0.2s;
 }
 
-#projects{
-    background: rgb(214, 75, 98);
-    color: white;
-    border-left: 0px;
-}
-
-h1{
+h1 {
     font-family: 'Open Sans';
 }
 
