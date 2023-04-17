@@ -8,7 +8,7 @@
     min-height: 2px;
     max-width: 75px;
     display: block;
-    background-color: black;
+    background-color:white;
     margin: 5px 0px 5px 0px;
 }
 
@@ -99,10 +99,12 @@ nav ul {
     flex-wrap: wrap;
     align-items: start;
     border: 3px black solid;
-    background-color: #F0F0F0;
+    background-color: #3c486b;
     border-top: 0px;
 }
-
+#home div{
+    color:white;
+}
 .content {
     padding: 5px;
     width: 50vw;
@@ -119,6 +121,32 @@ nav ul {
     font-family: 'Open Sans';
 }
 
+/* This is blog section */
+
+#blogs{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-height: max-content;
+    gap: 15px;
+    background: #ffffff;
+}
+#blogs .card_Container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-height: max-content;
+    gap: 15px;
+}
+#blogs .card_Container .card{
+    background-color: #F0f0f0;
+}
 /* this is the design/ second section */
 
 #designs {
@@ -129,14 +157,13 @@ nav ul {
     flex-wrap: nowrap;
     align-content: flex-end;
     justify-content: flex-start;
-    align-items: flex-end;
+    align-items: flex-start;
     width: 50%;
 }
 
 #designs h1 {
-    margin: 10px;
     font-size: 3em;
-    font-style:oblique;
+    margin-bottom: 15px;
 }
 
 .container {
@@ -171,7 +198,7 @@ nav ul {
     align-items: flex-start;
     max-height: max-content;
     gap: 15px;
-    background: rgb(255, 150, 168);
+    background-color: #F45050;
     width: 50%;
 }
 #projects .card_Container{
@@ -186,7 +213,8 @@ nav ul {
 }
 #projects h1{
     font-size: 3em;
-    font-style: oblique;
+    color: white;
+    margin-bottom: 15px;
 }
 
 .card {
@@ -202,6 +230,10 @@ nav ul {
     align-items: flex-start;
     max-width: fit-content;
     box-shadow: 5px 5px rgb(0, 0, 0);
+}
+
+a:visited{
+    color:black;
 }
 
 .card:hover,
