@@ -1,7 +1,7 @@
 * {
     padding: 0px;
     margin: 0px;
-    font-family: 'Montserrat', 'Open Sans', 'Ubuntu';
+    font-family: 'Montserrat', 'DM Serif Display','Open Sans', 'Ubuntu';
 }
 
 .divider {
@@ -113,7 +113,7 @@ nav ul {
 .subcontent {
     font-size: 1.75em;
     font-weight: bold;
-    font-family: 'Open Sans';
+    font-family: 'Ubuntu';
 }
 
 .thin_Content {
@@ -122,10 +122,12 @@ nav ul {
 }
 
 /* This is blog section */
-
+#blogs h1{
+    font-family: 'DM Serif Display';
+}
 #blogs{
     display: flex;
-    flex-direction: column;
+    flex-direction: Row;
     flex-wrap: wrap;
     align-content: flex-start;
     justify-content: flex-start;
@@ -164,6 +166,7 @@ nav ul {
 #designs h1 {
     font-size: 3em;
     margin-bottom: 15px;
+    font-family: 'Ubuntu';
 }
 
 .container {
@@ -214,6 +217,7 @@ nav ul {
 #projects h1{
     font-size: 3em;
     color: white;
+    font-family: 'Ubuntu';
     margin-bottom: 15px;
 }
 
@@ -270,9 +274,6 @@ a:visited{
     transition: 0.2s;
 }
 
-h1 {
-    font-family: 'Open Sans';
-}
 .flex-wrapper{
     display: flex;
 }
@@ -296,6 +297,9 @@ h1 {
     .side_Image img {
         padding: 0px;
         height: 75vw;
+    }
+    #navbutton0 h1{
+        visibility: hidden;
     }
 }
 
