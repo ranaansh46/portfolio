@@ -132,13 +132,16 @@ nav ul {
 
 #designs h1 {
     margin: 10px;
+    font-size: 3em;
+    font-style:oblique;
 }
 
 .container {
     padding: 5px;
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
-    justify-content: flex-start;
+    justify-content: flex-end;
 }
 
 .container img:hover,
@@ -150,13 +153,24 @@ nav ul {
 
 .container img {
     transition: 0.2s;
-    height: 20vw;
+    height: 35vw;
     box-shadow: 8px 8px rgb(0, 0, 0);
 }
 
 /*this is the project section */
 
 #projects {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-height: max-content;
+    gap: 15px;
+    background: rgb(255, 150, 168);
+}
+#projects .card_Container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -165,7 +179,10 @@ nav ul {
     align-items: flex-start;
     max-height: max-content;
     gap: 15px;
-    background: rgb(255, 150, 168);
+}
+#projects h1{
+    font-size: 3em;
+    font-style: oblique;
 }
 
 .card {
