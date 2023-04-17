@@ -9,6 +9,7 @@
     max-width: 75px;
     display: block;
     background-color: black ;
+    margin: 5px 0px 5px 0px;
 }
 
 /* This is the navigation bar section */
@@ -33,7 +34,12 @@ nav ul {
 }
 #navbutton0 {
     padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
     width: 50vw;
+    gap: 10px;
 }
 .icons_Group {
     display: flex;
@@ -111,6 +117,9 @@ nav ul {
     justify-content: flex-start;
     align-items: flex-end;
 }
+#designs h1{
+    margin:10px;
+}
 .container {
     padding: 5px;
     display: flex;
@@ -132,12 +141,12 @@ nav ul {
 
 #projects{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     align-content: flex-start;
     justify-content: flex-start;
     align-items: flex-start;
-    max-height:max-content;
+    max-height: max-content;
     gap: 15px;
 }
 .card{
